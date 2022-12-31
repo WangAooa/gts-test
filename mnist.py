@@ -172,7 +172,7 @@ def main():
 if __name__ == '__main__':
     main()
 
-    while(true):
+    while(True):
         time.sleep(1000)
         
 
