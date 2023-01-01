@@ -12,7 +12,6 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 
 import logging
-import time
 
 
 WORLD_SIZE = int(os.environ.get('WORLD_SIZE', 1))
@@ -168,11 +167,6 @@ def main():
     if (args.save_model):
         torch.save(model.state_dict(),"mnist_cnn.pt")
 
-
 if __name__ == '__main__':
     main()
-
-    while(True):
-        time.sleep(1000)
-        
 

@@ -35,4 +35,4 @@ arena --loglevel debug submit pytorch --name=pytorch-local-git --gpus=1  --worke
 
 
 
-arena --loglevel info submit pytorch \    --name=pytorch-local-git \    --gpus=1 \    --image=registry.cn-beijing.aliyuncs.com/ai-samples/pytorch-with-tensorboard:1.5.1-cuda10.1-cudnn7-runtime \    --sync-mode=git \    --sync-source=https://code.aliyun.com/370272561/mnist-pytorch.git \    "python /root/code/mnist-pytorch/mnist.py --backend gloo"
+arena --loglevel info submit pytorch \    --name=pytorch-local-git \    --gpus=1 \    --image=registry.cn-beijing.aliyuncs.com/ai-samples/pytorch-with-tensorboard:1.5.1-cuda10.1-cudnn7-runtime \    --sync-mode=git \    --sync-source=https://github.com/WangAooa/gts-test.git \    "python /root/code/mnist-pytorch/mnist.py --backend gloo"
